@@ -1,0 +1,686 @@
+
+@import 'flaticon';
+@import 'keyframes';
+@import 'mixins';
+@import 'responsive';
+@import 'variables';
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: 'Proxima Nova' !important;
+	font-size: 13px;
+	background-color: $l-light-gray !important;
+}
+
+ul,li {
+	list-style: none;
+	margin:0;
+	padding: 0;
+}
+
+a {
+	&:hover {
+		text-decoration:none !important;
+	}
+}
+
+
+
+@font-face {
+	font-family: 'Open Sans Light';
+	src: url('../fonts/OpenSans-Light.eot');
+	src: url('../fonts/OpenSans-Light.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	url('../fonts/OpenSans-Light.otf') format('woff2'),
+	url('../fonts/OpenSans-Light.woff') format('woff'),
+	url('../fonts/OpenSans-Light.woff2') format('woff2'),
+	url('../fonts/OpenSans-Light.ttf') format('truetype'),
+	url('../fonts/OpenSans-Light.svg#OpenSans-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans Bold';
+	src: url('../fonts/OpenSans-ExtraBold.eot');
+	src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.otf') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
+	url('../fonts/OpenSans-ExtraBold.woff2') format('woff2'),
+	url('../fonts/OpenSans-ExtraBold.ttf') format('truetype'),
+	url('../fonts/OpenSans-ExtraBold.svg#OpenSans-ExtraBold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Proxima Nova';
+	src: url('../fonts/MarkSimonson-ProximaNovaRegular.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaRegular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaRegular.svg#ProximaNovaACond-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Black';
+	src: url('../fonts/MarkSimonson-ProximaNovaBlack.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaBlack.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaBlack.svg#ProximaNovaACond-Black') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proxima Nova Light';
+	src: url('../fonts/MarkSimonson-ProximaNovaLight.eot');
+	src: url('../fonts/MarkSimonson-ProximaNovaLight.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.otf') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff') format('woff'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.woff2') format('woff2'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.ttf') format('truetype'),
+	url('../fonts/MarkSimonson-ProximaNovaLight.svg#ProximaNovaACond-Light') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'TexGyreadVentor';
+	src: url('../fonts/texgyreadventor-regular.eot');
+	src: url('../fonts/texgyreadventor-regular.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/texgyreadventor-regular.woff2') format('woff2'),
+	url('../fonts/texgyreadvFentor-regular.otf') format('woff2'),
+	url('../fonts/texgyreadventor-regular.woff') format('woff'),
+	url('../fonts/texgyreadventor-regular.woff2') format('woff2'),
+	url('../fonts/texgyreadventor-regular.ttf') format('truetype'),
+	url('../fonts/texgyreadventor-regular.svg#texgyreadventor-regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@font-face {
+	font-family: 'champagne__limousinesregular';
+	src: url('../fonts/champagne__limousines-webfont.eot');
+	src: url('../fonts/champagne__limousines-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/champagne__limousines-webfont.woff2') format('woff2'),
+	url('../fonts/champagne__limousines-webfont.woff') format('woff'),
+	url('../fonts/champagne__limousines-webfont.ttf') format('truetype'),
+	url('../fonts/champagne__limousines-webfont.svg#champagne__limousinesregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'champagne__limousinesbold';
+	src: url('../fonts/champagne__limousines_bold-webfont.eot');
+	src: url('../fonts/champagne__limousines_bold-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/champagne__limousines_bold-webfont.woff2') format('woff2'),
+	url('../fonts/champagne__limousines_bold-webfont.woff') format('woff'),
+	url('../fonts/champagne__limousines_bold-webfont.ttf') format('truetype'),
+	url('../fonts/champagne__limousines_bold-webfont.svg#champagne__limousinesbold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=3.0.1');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=3.0.1') format('embedded-opentype'),
+	url('../fonts/fontawesome-webfont.woff?v=3.0.1') format('woff'),
+	url('../fonts/fontawesome-webfont.ttf?v=3.0.1') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+header {
+	section {
+		&.headertop {
+			padding: 15px 0px;
+			width: 100%;
+			height: 53px;
+			background-image: url('../images/header_top_bg.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			display: block;
+			.contact-top {
+				.contact-detail {
+					width:30%;
+					float: left;
+					.icon {
+						i {
+							margin-right: 15px;
+							&:before {
+								color:$light-orange;
+								font-size: 13px;
+							}
+						}
+					}
+					.info {
+						span {
+							color:$white;
+							font-weight: bold;
+						}
+					}
+				}
+			}
+			.social-media {
+				ul {
+					li {
+						display: inline-block;
+						margin-left: 15px;
+						a {
+							color:$white;
+							transition:all 0.4s ease;
+							&:hover {
+								color:$light-orange;
+							}
+							i {
+								&:before {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		&.headermenu {
+			background-color: $white;
+			padding: 20px 0px;
+			.logo {
+				a {
+					img {
+
+					}
+				}
+			}
+			.mainmenu {
+				margin-top:25px;
+				nav {
+					a {
+						color:$text-color;
+						font-weight: bold;
+						display: inline-block;
+						padding: 0px 15px;
+						&:hover {
+							color:$orange;
+							border-bottom:3px solid $orange;
+						}
+					}
+				}
+			}
+		}
+	}
+	.line {
+		background-image: url('../images/menu_bottom_pattern.jpg');
+		background-repeat: repeat-x;
+		height:9px;
+	}
+}
+
+
+section {
+	&#corporate_banner {
+		background-image: url('../images/corporate_banner.jpg');
+	}
+	&#services_banner {
+		background-image: url('../images/services_banner.jpg');
+	}
+	&#career_banner {
+		background-image: url('../images/career_banner.jpg');
+	}
+	&.video {
+		height:750px;
+		background-color: $light-gray;
+	}
+	&.company-box {
+		position: relative;
+		margin-top: -30px;
+		margin-bottom: 60px;
+		.company {
+			background-color: $white;
+			line-height: 100px;
+			padding:50px;
+			.box {
+				border-right: 1px solid $l-light-gray;
+				&:last-child {
+					border-right:none;
+				}
+				a {
+					.logo {
+						text-align: center;
+						img {
+
+						}
+					}
+					.slogan {
+						h3 {
+							color:$black;
+							text-align: center;
+							span {
+								display: block;
+								strong {
+
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&.banner {
+		height: 500px;
+		width: 100%;
+		position: relative;
+		.content {
+			position: relative;
+			z-index: 99;
+			color:$white;
+			margin-top:6% ;
+			.title {
+				h1 {
+					font-family: 'Proxima Nova Light';
+					font-size: 94px;
+				}
+			}
+			.slogan {
+				margin-top:4%;
+				h2 {
+					span {
+						font-size:64px;
+						&:first-child {
+							font-family: 'Proxima Nova Light';
+						}
+						display: block;
+						strong {
+
+						}
+					}
+				}
+			}
+			.arrow-icon {
+				i {
+					&.arrow {
+						&:before {
+							@include clearFix;
+							background-image: url('../images/banner-arrow-bottom.png');
+							width:50px;
+							height:39px;	
+							margin: auto;
+							position: static;
+							margin-top:4%;				
+						}
+					}
+				}
+			}
+		}
+		.banner-bg-black {
+			position: absolute;
+			top:0;
+			left:0;
+			right: 0;
+			bottom:0;
+			background-color: rgba(0,0,0,0.6);
+		}
+	}
+	&.banner-info {
+		padding: 60px 0px;
+		.about {
+			h2 {
+				position: relative;
+				font-size:40px;
+				font-family: 'Proxima Nova Black';
+				&:before {
+					@include clearFix;
+					width:190px;
+					height: 2px;
+					background-color: $orange;
+					top:50px;
+					left:0;
+				    right: 0;
+				    bottom:0;
+				    margin: 0 auto;
+				}
+			}
+			p {
+				margin: 60px 0px;
+				font-family: 'Open Sans Light';
+				font-size: 16px;
+				line-height:35px;
+				q {
+					font-family: 'Open Sans Bold';
+				}
+			}
+			a {
+				font-size: 20px;
+				font-family: 'Proxima Nova Black';
+				color:$orange;
+				border:3px solid $orange;
+				padding:8px 20px;
+				&:hover {
+
+				}
+			}
+		}
+	}
+	&.serv {
+		background-color: $white;
+		padding: 60px 0px;
+		.services {
+			.slogan {
+				margin-bottom:40px;
+				h3 {
+					color:$gray;
+					text-transform: uppercase;
+					font-size: 18px;
+					line-height: 25px;
+				}
+			}
+			.line {
+					width:65%;
+					height: 3px;
+					background-color: $gray;
+					margin: auto;
+					margin-bottom: 60px;
+					.services-line {
+						position: relative;
+						i {
+							@include clearFix;
+							height: 50px;
+							width: 3px;
+							background-color: $gray;
+							left: 0;
+						    right: 0;
+						    margin: auto;
+						}
+						&:before {
+							@include clearFix;
+							height:50px;
+							width:3px;
+							background-color: $gray;
+
+						}
+						&:after {
+							@include clearFix;
+							height:50px;
+							width:3px;
+							background-color: $gray;
+							right: 0;
+						}
+					}
+				}
+			.services-all {
+				padding: 0px 20px;
+				&:nth-child(2){
+					margin-top: 0px;
+				}
+				.services-box {
+					transition: all 0.4s ease;
+					cursor: pointer;
+					margin: 15px 0px;
+					padding: 20px 20px;
+					i {
+						&:before {
+							color:$orange;
+							font-size: 60px;
+						}
+					}
+					h4 {
+						font-family: 'Proxima Nova Black';
+						color:$black;
+					}
+					p {
+						font-family: 'Proxima Nova';
+						color:$gray;
+					}
+					&:hover {
+						background-color: $orange;
+						i {
+							&:before {
+								color:$white;
+							}
+						}
+						h4 , p {
+							color:$white;
+						}
+					}
+				}
+			}
+			.all-services-link {
+				margin-top: 30px;
+				a {
+					color:$orange;
+					font-size: 20px;
+					padding: 8px 20px;
+					border:3px solid $orange;
+					font-family: 'Open Sans Bold';
+					&:hover {
+
+					}
+				}
+			}
+		}
+	}
+	&.career {
+		.career-box {
+			cursor: pointer;
+			padding: 15px 20px;
+			transition: all 0.4s ease;
+			h5 {
+				font-family: 'Proxima Nova Black';
+				color:$black;
+				font-size:20px;
+				margin-bottom: 0px;
+			}
+			i {
+				&:before {
+					margin: 20px 0px;
+					font-size:50px;
+					color:$black;
+				}
+			}
+			p {
+				color:$black;
+			}
+			&:hover {
+				background-color: $orange;
+				i {
+					&:before {
+						color:$white;
+					}
+				}
+				p ,h5 {
+					color:$white;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: $white;
+	padding: 20px 0px;
+	.footer-menu {
+		padding: 20px 0px;
+		border-bottom: 1px solid $l-light-gray;
+		.sect {			
+			.title {
+				margin-bottom: 25px;
+				h6 {
+					font-family: 'Proxima Nova Black';
+					font-size: 20px;
+					color:$black;
+				}
+			}
+			.footer-detail {
+				display: inline-block;
+				a {
+					font-family: 'Proxima Nova';
+					display: block;
+					color:$black;
+					font-size: 15px;
+					color:$gray;
+					margin:10px 0px;
+					&:hover {
+						color:$light-gray;
+					}
+				}
+				.concat {
+					display: block;
+					span {
+						&.subtitle {
+							font-family: 'Open Sans Bold';
+							font-size: 16px;
+						}
+					}
+					address {
+						.address-detail {
+							margin:10px 0px;
+							i {
+								&:before {
+									color:$orange;
+								}
+							}
+							span {
+								font-size: 14px;
+								margin-left: 10px;
+							}
+						}
+					}
+					.social-media {
+						ul {
+							li {
+								display: inline-block;
+								a {
+									font-size:25px;
+									display: block;
+									&:hover {
+
+									}
+								}
+								&:nth-child(1) {
+									a {
+										color:#3a589b;
+									}
+								}
+								&:nth-child(2) {
+									a {
+										color:#598dca;
+									}
+								}
+								&:nth-child(3) {
+									a {
+										color:#57b6ca;
+									}
+								}
+								&:nth-child(4) {
+									a {
+										color:#6b463c;
+									}
+								}
+								&:nth-child(5) {
+									a {
+										color:#cf3427;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.copyright {
+		margin-top: 20px;
+		.text {
+				margin-top:10px;
+
+			span {
+			}
+		}
+	}
+	.references {
+		padding: 30px 0px;
+		border-bottom: 1px solid $l-light-gray;
+		.owl-prev {
+		  background: url('../images/left_arrow.png') left center no-repeat;
+		  height: 24px;
+		  position: absolute;
+		  top: 65%;
+		  width: 24px;
+		  z-index: 1000;
+		  cursor: pointer;
+		  color: transparent;
+		  margin-top: -27px;
+		}
+		.owl-next {
+		  background: url('../images/right_arrow.png') right center no-repeat;
+		  height: 24px;
+		  position: absolute;
+		  top: 65%;
+		  width: 24px;
+		  z-index: 1000;
+		  right:0;
+		  cursor: pointer;
+		  color: transparent;
+		  margin-top: -27px;
+		}
+		.owl-prev:hover,
+		.owl-next:hover {
+		  opacity: 0.5;
+		}
+		.owl-carousel {
+			.owl-item {
+				img {
+					width: 170px !important;
+					height: 90px !important;
+					margin-left: 55px;
+				}
+			}
+		}
+		.white-popup-block {
+		  background: #FFF;
+		  padding: 20px 30px;
+		  text-align: left;
+		  max-width: 650px;
+		  margin: 40px auto;
+		  position: relative;
+		}
+		.popuptext {
+		  display: table;
+		}
+
+		.popuptext p {
+		  margin-bottom: 10px;
+		}
+
+		.popuptext span {
+		  font-weight: bold;
+		  float: right;
+		}
+	}
+}
+
